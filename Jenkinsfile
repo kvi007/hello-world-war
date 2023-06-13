@@ -1,15 +1,15 @@
 pipeline {
     agent { label 'slave1' } 
     stages {
-        stage('checkout') {
+        stage('checkout1') {
             steps {
                 sh 'git clone https://github.com/KiranVItagi/hello-world-war'
             }
         }
-           stage('build') {
+        stage('build') {
             steps {
                 sh 'mvn package'
             }
         }
-           }
-    }
+       }
+}

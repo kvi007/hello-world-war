@@ -2,9 +2,7 @@ pipeline {
     agent { label 'slave1' } 
     stages {
         stage('checkout1') {
-             steps {
-                sh rm -rf *
-            }
+             
             steps {
                 sh 'git clone https://github.com/KiranVItagi/hello-world-war'
             }

@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('checkout1') {
                 steps {
+                sh "rm -rf /home/slave1/workspace/jfrogpipe/hello-world-war"
                 sh 'git clone https://github.com/KiranVItagi/hello-world-war'
             }
         }

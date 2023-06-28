@@ -24,11 +24,7 @@ pipeline {
                             }  
                             ] }'''
                         )
-                stage('copy') {
-                    steps {
-                        sh "sudo cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1 /opt/apache-tomcat-8.5.90/webapps/"
-                            }
-        }
+              
             }	
        }
     }

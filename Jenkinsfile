@@ -26,7 +26,7 @@ pipeline {
                         )
                 stage('copy') {
                     steps {
-                        sh "cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1 /opt/apache-tomcat-8.5.90/webapps/"
+                        sh 'cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1 /opt/apache-tomcat-8.5.90/webapps/'
                     }
         }
             }	

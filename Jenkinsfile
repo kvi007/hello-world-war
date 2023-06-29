@@ -31,6 +31,9 @@ pipeline {
             steps {
                 // Copy files to the Tomcat webapps directory
                 sh "cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1.war /opt/apache-tomcat-8.5.90/webapps/"
+                // setting permission to /bin/shutdown.sh and /bin/startup.sh
+                sh chmod 777 '/opt/apache-tomcat-8.5.90/bin/shutdown.sh'
+                sh chmod 777 '/opt/apache-tomcat-8.5.90/bin/startup.sh'
                 // Restart Tomcat (if required)
                 sh '/opt/apache-tomcat-8.5.90/bin/shutdown.sh'
                 sh '/opt/apache-tomcat-8.5.90/bin/startup.sh'

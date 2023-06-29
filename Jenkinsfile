@@ -35,8 +35,8 @@ pipeline {
               //  sh 'chmod 777 /opt/apache-tomcat-8.5.90/bin/shutdown.sh'
                // sh 'chmod 777 /opt/apache-tomcat-8.5.90/bin/startup.sh'
                 // Restart Tomcat (if required)
-                sh '/opt/apache-tomcat-8.5.90/bin/shutdown.sh'
-                sh '/opt/apache-tomcat-8.5.90/bin/startup.sh'
+             //   sh '/opt/apache-tomcat-8.5.90/bin/shutdown.sh'
+              //  sh '/opt/apache-tomcat-8.5.90/bin/startup.sh'
             }
         }              
             }	

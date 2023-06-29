@@ -27,7 +27,7 @@ pipeline {
         stage('Copy to Tomcat') {
             steps {
                 // Copy files to the Tomcat webapps directory
-                sh "cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1 /opt/apache-tomcat-8.5.90/webapps/"
+                sh "cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1.war /opt/apache-tomcat-8.5.90/webapps/"
                 // Restart Tomcat (if required)
                 sh '/path/to/tomcat/bin/shutdown.sh'
                 sh '/path/to/tomcat/bin/startup.sh'

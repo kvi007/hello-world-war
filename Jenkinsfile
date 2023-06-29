@@ -27,7 +27,8 @@ pipeline {
                    stage('Deploy to Tomcat') {
               steps {
         // Copy the WAR file to the Tomcat webapps directory
-                            sh "cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1 /opt/apache-tomcat-8.5.90/webapps/"
+                            sh "cp /home/slave1/workspace/jfrogpipe/target/hello-world-war-1.0.1
+                                  /opt/apache-tomcat-8.5.90/webapps/"
 
         // Restart Tomcat to deploy the application
                             sh 'service tomcat restart'

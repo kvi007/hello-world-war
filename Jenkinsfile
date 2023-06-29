@@ -22,8 +22,11 @@ pipeline {
                                "pattern": "*.war", 
                                 "target": "example-repo-local/" 
                             }  
-                            ] }'''
-                        )
+                                 ] 
+                                 }'''
+                          )
+                  }
+       }
         stage('Copy to Tomcat') {
             steps {
                 // Copy files to the Tomcat webapps directory
